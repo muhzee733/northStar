@@ -12,7 +12,7 @@ const services = [
                 p_exp: `Our attention to detail ensures that your submittal packages are complete and accurate, reducing the likelihood of delays in the approval process`
             }
         ],
-        service_img : '/assets/images/fire/FIRE 5.png'
+        service_img : '/assets/images/Sample-Plans.png'
     },
     {
         title: `Consultation & Technical Guidance`,
@@ -27,7 +27,7 @@ const services = [
                 p_exp: `We assist in identifying and resolving potential issues before they become obstacles, ensuring smooth and successful project execution.`
             }
         ],
-        service_img : '/assets/images/systems/CAMERA SYSTEM.png'
+        service_img : '/assets/images/user/7.jpg'
     },
     {
         title: `Bid Takeoff/Scope of Work Preparation`,
@@ -42,7 +42,7 @@ const services = [
                 p_exp: `We prepare thorough scopes of work that align with project requirements and support successful project completion.`
             }
         ],
-        service_img: "/assets/images/systems/CAMERA SYSTEM 2.png"
+        service_img: "/assets/images/Home BG.png"
     },
     {
         title: `Low-Voltage System Drafting`,
@@ -57,7 +57,7 @@ const services = [
                 p_exp: `Our team works closely with you to develop tailored solutions that meet the unique needs of your project, ensuring optimal performance and reliability.`
             }
         ],
-        service_img : '/assets/images/fire/FIRE 4.png'
+        service_img : '/assets/images/Low-Voltage System Drafting.png'
     },
     {
         title: `Fire Alarm System Configuration & Device Placement`,
@@ -72,7 +72,7 @@ const services = [
                 p_exp: `Our expertise allows us to optimize your system configuration and device placement for both code compliance and cost-effective solutions.`
             },
         ],
-        service_img : '/assets/images/fire/FIRE 7.png'
+        service_img : '/assets/images/FIRE-ALARM-LAYOUT-PICTURE-FOR-WEBSITE-18OCT24.png'
     },
 ]
 
