@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Your existing sendEmail function
 function sendEmail() {
+    
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
@@ -28,12 +29,13 @@ function sendEmail() {
         <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong> ${message}</p>
     `;
+    
 
     // Send email using SMTPJS  
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: "anilanazir7@gmail.com",
-        Password: "C99E734F1782D85A98E2F5011C7CDFDD2904",
+        Host: "smtp.elasticemail.com",
+        Username: "csscience20@gmail.com",
+        Password: "656BED57B5A30A35D675A07DA221FAAD271C",
         To: "anilanazir7@gmail.com", 
         From: document.getElementById('email').value,
         Subject: "form submission",
