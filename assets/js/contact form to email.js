@@ -31,11 +31,11 @@ function sendEmail() {
 
     // Send email using SMTPJS  
     Email.send({
-        Host: "smtp.elasticemail.com",
+        Host: "smtp.gmail.com",
         Username: "anilanazir7@gmail.com",
-        Password: "CC8CF17FC1A3D394A79EBC9AB507AE6242A3",
+        Password: "C99E734F1782D85A98E2F5011C7CDFDD2904",
         To: "anilanazir7@gmail.com", 
-        From: "anilanazir7@gmail.com",
+        From: document.getElementById('email').value,
         Subject: "form submission",
         Body: emailBody
        
