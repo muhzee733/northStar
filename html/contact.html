@@ -7,6 +7,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="shortcut icon" href="/assets/images/main logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <title>Contact - North Star</title>
   
 </head>
@@ -138,48 +141,50 @@
       <p class="text-xl font-bold">Fill out our contact form, to send us a message, and a member of our team will
         respond promptly to assist you with your project.
       </p>
-      <form id="contact-form" class=" mt-12" onsubmit="sendEmail();  return false;">
+      <form id="contact-form" class="mt-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Name -->
-          <div  class="flex flex-col">
+          <div class="flex flex-col">
             <label for="name" class="font-semibold">Your Name</label>
-            <input type="text" id="name" placeholder="Your name" required
+            <input type="text" id="name" name="name" placeholder="Your name" required
               class="p-3 border border-gray-300 bg-slate-300 rounded-md focus:ring-2 mt-2 focus:ring-[#007ACC] focus:outline-none">
           </div>
           <!-- Phone -->
           <div id="Phone" class="flex flex-col">
             <label for="phone" class="font-semibold">Phone</label>
-            <input type="text" id="phone" placeholder="Phone number" required
+            <input type="text" id="phone" name="phone" placeholder="Phone number" required
               class="p-3 border border-gray-300 bg-slate-300 rounded-md focus:ring-2 mt-2 focus:ring-[#007ACC] focus:outline-none">
           </div>
         </div>
         <!-- Email -->
         <div id="Email Address" class="flex flex-col mt-6">
           <label for="email" class="font-semibold">Email Address</label>
-          <input type="email" id="email" placeholder="Your email" required
+          <input type="email" id="email" name="email" placeholder="Your email" required
             class="p-3 border border-gray-300 bg-slate-300 rounded-md focus:ring-2 mt-2 focus:ring-[#007ACC] focus:outline-none">
         </div>
-        <!-- Comapny -->
+        <!-- Company -->
         <div id="Company" class="flex flex-col mt-6">
           <label for="company" class="font-semibold">Company</label>
-          <input type="text" id="company" placeholder="Your Company" required
+          <input type="text" id="company" name="company" placeholder="Your Company" required
             class="p-3 border border-gray-300 bg-slate-300 rounded-md focus:ring-2 mt-2 focus:ring-[#007ACC] focus:outline-none">
         </div>
         <!-- Subject -->
         <div id="Subject" class="flex flex-col mt-6">
           <label for="subject" class="font-semibold">Subject</label>
-          <input type="text" id="subject" placeholder="Subject" required
+          <input type="text" id="subject" name="subject" placeholder="Subject" required
             class="p-3 border border-gray-300 bg-slate-300 rounded-md focus:ring-2 mt-2 focus:ring-[#007ACC] focus:outline-none">
         </div>
         <!-- Message -->
-        <div  id="Message" class="flex flex-col mt-6">
+        <div id="Message" class="flex flex-col mt-6">
           <label for="message" class="font-semibold">Message</label>
-          <textarea id="message" rows="4" placeholder="Your message" required
+          <textarea id="message" name="message" rows="4" placeholder="Your message" required
             class="p-3 border border-gray-300 bg-slate-300 rounded-md focus:ring-2 mt-2 focus:ring-[#007ACC] focus:outline-none"></textarea>
         </div>
         <!-- Submit Button -->
-        <button type="submit"
-          class="w-full yellow-btn text-white py-2 mt-6 rounded-lg">SEND</button>
+        <button type="submit" class="w-full yellow-btn text-white py-2 mt-6 rounded-lg">SEND</button>
+      
+        <!-- Response Message -->
+        <div id="response-message"></div>
       </form>
       <div class="relative min-w-full mx-auto text-wrapper mt-[80px] blue-heading">
         <!-- Content Wrapper -->
@@ -224,6 +229,27 @@
   
     </div>
   </footer>
+
+  <script>
+    // Initialize EmailJS with your user ID
+    emailjs.init('XFFIi19Yw_G3o84R1');
+  
+    // Add event listener for form submission
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the form from submitting normally
+  
+      // Send email via EmailJS
+      emailjs.sendForm('service_ga6quqj', 'template_u5j6kn7', this)
+        .then(function (response) {
+          console.log('SUCCESS!', response);
+          document.getElementById("response-message").textContent = 'Message sent successfully!';
+        }, function (error) {
+          console.log('FAILED...', error);
+          document.getElementById("response-message").textContent = 'There was an error sending your message.';
+        });
+    });
+  </script>
+  
   
 
 
