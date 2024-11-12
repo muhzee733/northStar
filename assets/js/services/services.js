@@ -57,7 +57,7 @@ const services = [
                 p_exp: `Our team works closely with you to develop tailored solutions that meet the unique needs of your project, ensuring optimal performance and reliability.`
             }
         ],
-        service_img : '/assets/images/Low-Voltage System Drafting.png'
+        service_img : '/assets/images/systems/low-voltage.jpg'
     },
     {
         title: `Fire Alarm System Configuration & Device Placement`,
