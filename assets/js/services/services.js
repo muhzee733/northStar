@@ -42,7 +42,7 @@ const services = [
                 p_exp: `We prepare thorough scopes of work that align with project requirements and support successful project completion.`
             }
         ],
-        service_img: "/assets/images/Home BG.png"
+        service_img: "/assets/images/Bid.takeoff.jpg"
     },
     {
         title: `Low-Voltage System Drafting`,
