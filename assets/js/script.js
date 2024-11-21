@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Prevent clicks inside sidebar from closing it
-    mobileMenu.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
+    // // Prevent clicks inside sidebar from closing it
+    // mobileMenu.addEventListener('click', function(event) {
+    //     event.stopPropagation();
+    // });
 
     // Close sidebar when clicking on a nav item (for mobile)
     const navItems = mobileMenu.querySelectorAll('.nav-item');

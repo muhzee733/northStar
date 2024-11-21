@@ -263,6 +263,13 @@ fill: currentColor; /* Makes SVG icon inherit text color */
         width: 20%;
         height: 3px;
     }
+    .home-section {
+        background-image: 
+            linear-gradient(to right, rgba(var(--main-blue-color), 0.9) 30%, rgba(0, 0, 0, 0.3) 70%), 
+            url('/assets/images/Home\ BG.png');
+       
+    }
+ 
 
 }
 
@@ -330,6 +337,7 @@ fill: currentColor; /* Makes SVG icon inherit text color */
     background-image: linear-gradient(to right, rgba(var(--main-blue-color), 0.7), rgba(var(--main-blue-color), 01)), url('/assets/images/Home\ BG.png');
     padding: 3rem 0;
 }
+
 
 /* Initial state for animations */
 .home-breadcrumb,
