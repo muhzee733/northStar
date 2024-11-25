@@ -112,7 +112,8 @@ html {
 .navbar-bottom {
     display: flex;
     justify-content: center; /* Center the wrapper */
-    padding: 10px 20px;
+    padding: 0px 20px;
+    height:88px;
 }
 .navbar-center {
     display: flex;
@@ -223,7 +224,7 @@ fill: currentColor; /* Makes SVG icon inherit text color */
 /* =======HOME SECTION ========== */
 .home-section {
     background-image: linear-gradient(to right, rgba(var(--main-blue-color), 0.8) 20%, rgba(255, 255, 255, 0.01) 80%), url('/assets/images/Home\ BG.png');
-
+      /* background-image: url('/assets/images/Home\ BG.png'); */
 }
 
 .home-section .welcome-text {
@@ -785,7 +786,9 @@ fill: currentColor; /* Makes SVG icon inherit text color */
     transform: translateY(0);
     /* Text moves to its original place */
 }
-
+.common-action-sec{
+    border-radius:60px;
+}
 
 /* =================== */
 /* Initial state */
@@ -878,3 +881,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox=
     height: 100%;
     transform: rotateX(180deg);
 }
+/* @media (min-width:1280px){
+    .container{
+        max-width: 1190px !important;
+
+    }
+} */
