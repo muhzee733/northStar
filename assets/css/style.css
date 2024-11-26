@@ -111,8 +111,7 @@ html {
 /* Bottom Row */
 .navbar-bottom {
     display: flex;
-        justify-content: space-between;
-        /* padding: 0px 33px; */
+     justify-content: space-between;
 }
 .navbar-center {
     display: flex;
@@ -318,8 +317,11 @@ left: 32%;
 .md\:w-1\/2 {
     width: unset !important;
 }
+.contact-us {
+display: flex;
+    flex-direction: column !important;
+}
 .md\:flex-row  {
-    flex: none !important;
 }
 }
 @media screen and (max-width:992px) {
