@@ -111,9 +111,8 @@ html {
 /* Bottom Row */
 .navbar-bottom {
     display: flex;
-    justify-content: center; /* Center the wrapper */
-    padding: 0px 20px;
     height:88px;
+     justify-content: space-between;
 }
 .navbar-center {
     display: flex;
@@ -247,10 +246,39 @@ fill: currentColor; /* Makes SVG icon inherit text color */
     width: 20%;
     height: 3px;
 }
-
+  .who-we-are-section{
+    border-top: 0.1px solid lightgray;
+  }
 @media screen and (max-width:600px) {
 
-
+    .home-section .partner-text {
+        text-align: center;
+    }
+    .home-section .cta-btn{
+position: absolute;
+left: 32%;
+    }
+    .common-why-us-sec{
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .who-we-are-section {
+        padding: 20px 10px !important;
+    }
+    .who-we-are-section1 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .expertise-section{
+    padding: 10px 10px 25px  10px !important;
+    /* padding-bottom: 20px; */
+        
+    }
+    .contact-us{
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px 20px !important;
+    }
     .home-section .welcome-text {
         left: 20%;
     }
@@ -275,7 +303,46 @@ fill: currentColor; /* Makes SVG icon inherit text color */
 }
 
 
-
+@media screen and (max-width:768px) {
+.who-we-are{
+    display: flex;
+    flex-direction: column;
+}
+.common-why-us-sec{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.who-we-are-section {
+    padding: 40px 10px !important;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 
+}
+.md\:w-1\/2 {
+    width: unset !important;
+}
+.contact-us {
+display: flex;
+    flex-direction: column !important;
+}
+.who-we-are{
+    flex-direction: column !important;
+}
+}
+@media screen and (max-width:992px) {
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 40px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .container{
+        max-width: 1190px !important;
+    }
+}
 /* Slide-in from right animation */
 @keyframes slideInRight {
     from {
@@ -323,6 +390,9 @@ fill: currentColor; /* Makes SVG icon inherit text color */
     opacity: 0;
     animation: slideInUp 1.4s ease-out forwards;
     animation-delay: 0.3s;
+    font-size: 36px;
+    line-height: inherit;
+
 }
 
 .home-section .cta-btn {
@@ -378,7 +448,8 @@ fill: currentColor; /* Makes SVG icon inherit text color */
 
 @media screen and (max-width:1024px) {
     .expertise-section {
-        padding: 3rem 0rem;
+        padding: 3rem 1rem;
+        border: none;
     }
 }
 
@@ -443,10 +514,10 @@ fill: currentColor; /* Makes SVG icon inherit text color */
 /* =========CONTACT SECTION========== */
 .contact-section-blue-bg {
     background-image: 
-    linear-gradient(to right, rgba(var(--main-blue-color), 0.7), rgba(var(--main-blue-color), 1)), 
-    url('');
+    linear-gradient(to right, rgba(var(--main-blue-color), .9), rgba(var(--main-blue-color), 1));
 
 }
+
 
 
 /* =============FOOTER SECTION=========== */
@@ -788,6 +859,7 @@ fill: currentColor; /* Makes SVG icon inherit text color */
 }
 .common-action-sec{
     border-radius:60px;
+    padding: 10px 20px;
 }
 
 /* =================== */
