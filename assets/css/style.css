@@ -298,8 +298,26 @@ left: 32%;
             url('/assets/images/Home\ BG.png');
        
     }
+    .common-red-blue-sec .our-approach{
+            gap:20px;
+            text-align: center;
+    }
+    .project-section-2 .paper-mill{
+        flex-direction: column-reverse;
+        padding:10px;
+    }
+    .who-we-are-section .inset-image{
+            width:180px;
+            height:121px;
+    }
  
 
+}
+@media screen and (max-width:400px){
+    .who-we-are-section .inset-image{
+        width:120px;
+        height:90px;
+}
 }
 
 
@@ -314,6 +332,7 @@ left: 32%;
 }
 .who-we-are-section {
     padding: 40px 10px !important;
+    
 }
 .contact-us{
     display: flex;
@@ -330,6 +349,11 @@ display: flex;
 .who-we-are{
     flex-direction: column !important;
 }
+.who-we-are-section .inset-image{
+    width:180px;
+    height:121px;
+}
+
 }
 @media screen and (max-width:992px) {
     .contact-us{
