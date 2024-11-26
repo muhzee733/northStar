@@ -273,6 +273,11 @@ left: 32%;
     /* padding-bottom: 20px; */
         
     }
+    .contact-us{
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px 20px !important;
+    }
     .home-section .welcome-text {
         left: 20%;
     }
@@ -321,14 +326,15 @@ left: 32%;
 display: flex;
     flex-direction: column !important;
 }
-.md\:flex-row  {
+.who-we-are{
+    flex-direction: column !important;
 }
 }
 @media screen and (max-width:992px) {
     .contact-us{
         display: flex;
         flex-direction: column;
-        padding: 40px 
+        padding: 10px 40px;
     }
 }
 @media screen and (max-width:1280px) {
