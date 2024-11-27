@@ -277,11 +277,24 @@ max-width: 42rem;
 .service-second-sec{
     padding: 6rem .9rem;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .who-we-are-section .inset-image{
         width:120px;
         height:90px;
 }
+ .certification{
+    flex-direction: column;
+    align-items: center;
+   
+ }
+ .life-safety{
+    margin-left:0 !important;
+ }
+ .certification img{
+    align-self: center;
+    margin-bottom: 8px;
+ }
+
 }
 @media screen and (max-width:600px) {
 
@@ -356,7 +369,7 @@ justify-content: center;
     }
     .common-red-blue-sec .our-approach{
             gap:20px;
-            text-align: center;
+            
     }
     .project-section-2 .paper-mill{
         flex-direction: column-reverse;
