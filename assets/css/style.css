@@ -252,13 +252,13 @@ font-weight: 600 !important;
     content: '';
     position: absolute;
     top: 50%;
-    left: -22%;
+    left: -19%;
     background-color: rgb(var(--main-yellow-color));
     width: 14%;
     height: 3px;
 }
 .banner {
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex ;
   flex-direction: column;
   justify-content: center;
@@ -277,10 +277,127 @@ max-width: 42rem;
 .service-second-sec{
     padding: 6rem .9rem;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:1280px) {
+    .container{
+        max-width: 1190px ;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container{
+        max-width: 988px !important ;
+    }
+    .expertise-section {
+        padding: 3rem 1rem;
+        border: none;
+    }
+    .nav-links a{
+        font-size: 17px !important;
+    }
+    .navbar-bottom img{
+        width: 140px;
+    }
+    .phone svg{
+        width: 20px;
+    }
+    .phone a{
+        font-size: 17px;
+    }
+    .why-choose-us{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .section-content{
+        width: 100% !important;
+    }
+    .contact-us{
+        flex-direction: column !important;
+    }
+    .expertise-section .text-container {
+        transform: translateX(100px);
+    }
+
+    .expertise-section .text-right-container {
+        transform: translateX(-100px);
+    }
+
+    .expertise-section .img-animate {
+        transform: translateY(100px);
+    }
+
+    .expertise-section.reverse-animation .reverse-text-container {
+        transform: translateX(-100px);
+    }
+
+    .expertise-section.reverse-animation .reverse-img-animate {
+        transform: translateX(100px);
+    }
+    .who-we-are-section .second-img{
+        bottom: 0 ;
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 740px !important ;
+    }
+.who-we-are{
+    display: flex;
+    flex-direction: column;
+}
+.common-why-us-sec{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    /* padding: 40px  */
+}
+.contact-us {
+display: flex;
+    flex-direction: column !important;
+}
+.who-we-are{
+    flex-direction: column !important;
+}
+.who-we-are-section .inset-image{
+    width:180px;
+    height:121px;
+}
+.second-img {
+    bottom: 0px !important;
+    width: 15%;
+}
+}
+@media screen and (max-width:992px) {
+    .contact-us{
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px 40px;
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        max-width: 400px !important;
+    }
     .who-we-are-section .inset-image{
         width:120px;
         height:90px;
+}
+.banner{
+    min-height: 550px !important;
+}
+.banner-btn{
+    margin-bottom: 25px;
+}
+.home-heading{
+    text-align: left !important;
+}
+.section-left h2{
+    text-align: left;
+}
+.section-left h3{
+    text-align: left;
 }
 }
 @media screen and (max-width:600px) {
@@ -298,13 +415,11 @@ display: flex;
 justify-content: center;
     }
     .banner {
-        min-height: 60vh;
-        display: flex ;
         align-items: center ;
     } 
     .common-why-us-sec{
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
     }
     .contact-us  a{
         font-size: 22px;
@@ -370,98 +485,12 @@ justify-content: center;
 
 }
 
-@media screen and (max-width:992px) {
-    .contact-us{
-        display: flex !important;
-        flex-direction: column !important;
-        padding: 10px 40px;
-    }
-}
-@media screen and (max-width:1024px) {
-    .container{
-        max-width: 988px !important ;
-    }
-    .expertise-section {
-        padding: 3rem 1rem;
-        border: none;
-    }
-    .nav-links a{
-        font-size: 17px !important;
-    }
-    .navbar-bottom img{
-        width: 140px;
-    }
-    .phone svg{
-        width: 20px;
-    }
-    .phone a{
-        font-size: 17px;
-    }
-    .why-choose-us{
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    .section-content{
-        width: 100% !important;
-    }
-    .contact-us{
-        flex-direction: column !important;
-    }
-    .expertise-section .text-container {
-        transform: translateX(100px);
-    }
 
-    .expertise-section .text-right-container {
-        transform: translateX(-100px);
-    }
 
-    .expertise-section .img-animate {
-        transform: translateY(100px);
-    }
 
-    .expertise-section.reverse-animation .reverse-text-container {
-        transform: translateX(-100px);
-    }
 
-    .expertise-section.reverse-animation .reverse-img-animate {
-        transform: translateX(100px);
-    }
-}
-@media screen and (max-width:768px) {
-    .container{
-        max-width: 740px !important ;
-    }
-.who-we-are{
-    display: flex;
-    flex-direction: column;
-}
-.common-why-us-sec{
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-}
-.contact-us{
-    display: flex;
-    flex-direction: column;
-    /* padding: 40px  */
-}
-.contact-us {
-display: flex;
-    flex-direction: column !important;
-}
-.who-we-are{
-    flex-direction: column !important;
-}
-.who-we-are-section .inset-image{
-    width:180px;
-    height:121px;
-}
 
-}
-@media screen and (max-width:1280px) {
-    .container{
-        max-width: 1190px ;
-    }
-}
+
 /* Slide-in from right animation */
 @keyframes slideInRight {
     from {

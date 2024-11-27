@@ -70,7 +70,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
             </svg>
-            <a href="tel:(208) 503-1832" class="ml-2 lg:text-2xl">(208) 503-1832</a> 
+            <a href="tel:(208) 503-1832" class="ml-2 text-xl">(208) 503-1832</a> 
         </div>
       </div>
     </div>
@@ -96,17 +96,20 @@
 
   <!-- Home section start -->
   <section class="relative bg-cover bg-center text-white common-home-section">
-    <div class="flex flex-col justify-center items-start gap-4 h-64 ml-12">
-      <p class="text-xl font-bold home-breadcrumb">
-        <a href="#" class="text-white">Home</a>
-        <span class="yellow-color"> → </span>
-        <a href="#" class="text-white">About Us</a>
-      </p>
-      <h1 class="text-4xl font-bold home-title">About NorthStar</h1>
+    <div class="container mx-auto">
+
+      <div class="flex flex-col justify-center items-start gap-4 h-64 px-4 ">
+        <p class="text-xl font-bold home-breadcrumb">
+          <a href="#" class="text-white text-xl">Home</a>
+          <span class="yellow-color"> >> </span>
+          <a href="#" class="text-white text-xl">About Us</a>
+        </p>
+        <h1 class="text-5xl font-bold home-title">About NorthStar</h1>
+      </div>
     </div>
     <!-- Fully positioned slanted red bar at the bottom -->
     
-    <div class="red-white-bar w-full absolute bottom-0">
+    <div class="red-white-bar w-full absolute bottom-0" style="border-bottom: 2px solid beige;">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,100 100,0 100,100" fill="rgb(170,0,0)"/>
         <polygon points="0,100 0,0 100,0" fill="white"/>
@@ -122,28 +125,28 @@
     <!-- Flex Container for Responsive Design -->
      <div class="container mx-auto">
 
-       <div class="flex md:flex-col service-second-sec flex-col gap-8 lg:py-5 lg:space-x-8 lg:flex-row">
+       <div class="flex md:flex-col md:py-5 service-second-sec flex-col gap-8 lg:py-20 lg:space-x-8 lg:flex-row">
          <!-- Image Container with Overlapping Images -->
-         <div class="w-full  lg:w-1/2 relative mb-8 md:mb-0 image-container">
+         <div class="w-full  lg:w-1/2 relative mb-8 md:mb-0 image-container relative">
            <!-- First (Background) Image -->
-           <img src="/assets/images/fire/FIRE AND CAMERA.png" alt="First Image" class="w-full h-[300px] lg:h-[400px] object-cover">
+           <img src="/assets/images/fire/FIRE AND CAMERA.png" alt="First Image" class="w-full md:h-[500px] h-[400px] lg:h-[500px] object-cover">
    
            <!-- Second (Overlapping) Image -->
            <img src="/assets/images/fire/FIRE 5.png" alt="Second Image"
-             class="absolute lg:bottom-2   -right-6 w-6/12 h-auto object-cover shadow-lg" style="border: 16px solid white;">
+             class="absolute lg:bottom-0 -right-0 w-6/12 h-auto translate-x-[0px] lg:translate-x-[50px] md:translate-x-[15px] md:max-w-[30%] lg:max-w-[50%] object-cover shadow-lg second-img" style="border: 16px solid white;">
          </div>
    
          <!-- Text Content Container -->
-         <div class="w-full md:w-1/2 lg:px-4 lg:px-8 flex flex-col justify-center text-container">
+         <div class="w-full lg:w-1/2 lg:px-1 lg:px-1 flex flex-col justify-center text-container">
            <div>
              <!-- Section Heading -->
-             <h4 class="text-xl blue-heading font-bold">
+             <h4 class="text-md lg:text-xl blue-heading font-bold">
                WHO WE ARE
              </h4>
-             <h2 class="text-3xl font-bold  font-bold mb-4">
+             <h2 class="text-2xl lg:text-3xl font-bold  font-bold mb-4">
                Transforming Fire Alarm Solutions with Unmatched Expertise
              </h2>
-             <p class="text-base text-justify md:text-lg mb-6">
+             <p class=" text-justify md:text-lg mb-6">
                At NorthStar Systems, we transform complex fire alarm and low-voltage challenges into seamless,
                code-compliant solutions. With over 25 years of industry expertise, we empower fire alarm contractors with
                precision-crafted permit drawings and expert guidance, ensuring your projects are executed with the highest
@@ -152,25 +155,26 @@
    
              <!-- Icons and Text -->
              <div class="flex flex-col lg:flex-row gap-4 icon-text">
-               <div class="flex gap-3">
-                 <div class="text-white font-bold tick-icon">
-                   <i class="fa-solid fa-check"></i>
+               <div class="flex flex-col gap-3">
+                 <div class=" flex gap-3">
+                   
+                   <div><i class="fa-solid fa-check font-bold tick-icon text-white p-1"></i></div>
+                   <div><h4 class="font-bold">25+ Years of Expertise</h4></div>
                  </div>
-                 <div>
-                   <h4 class="font-bold">25+ Years of Expertise</h4>
-                   <p class="text-sm text-justify">Toby Woods brings precision and attention to detail from his submarine
+                 <div >
+                   
+                   <p class="text-sm  lg:text-md xl:text-md text-justify lg:pr-8">Toby Woods brings precision and attention to detail from his submarine
                      service to NorthStar Systems.</p>
                  </div>
                </div>
    
-               <div class="flex gap-3">
-                 <div class="text-white font-bold tick-icon">
-                   <i class="fa-solid fa-check"></i>
+               <div class="flex flex-col gap-3">
+                 <div class="flex gap-3">
+                   <i class="fa-solid fa-check text-white font-bold tick-icon p-1"></i>
+                   <div> <h4 class="font-bold">Trusted and Reliable</h4></div>
                  </div>
                  <div>
-                   <h4 class="font-bold">Trusted and Reliable</h4>
-                   <p class="text-sm text-justify">NorthStar Systems delivers tailored, code-compliant solutions for fire
-                     alarm and low-voltage projects.</p>
+                   <p class="text-sm lg:text-md  xl:text-md text-justify pr-8">NorthStar Systems delivers tailored, code-compliant solutions for fire alarm and low-voltage projects.</p>
                  </div>
                </div>
              </div>
@@ -185,16 +189,16 @@
 
   <!-- experience section start -->
 
-  <section class="expertise-section relative w-full bg-cover bg-center bg-no-repeat lg:py-5 py-20">
+  <section class="expertise-section relative w-full bg-cover bg-center py-20 bg-no-repeat md:py-5 lg:py-5 py-20">
     <!-- Content of the section -->
-    <div class="expertise-section relative container mx-auto gap-8 flex flex-col lg:flex-row items-start z-10 text-white p-6 py-20"
+    <div class="expertise-section relative container md:py-5 mx-auto gap-8 flex flex-col lg:flex-row items-start z-10 text-white p-6 py-20"
       x-data="{ openAccordion: null }">
 
       <!-- Right Section (Text Content) -->
       <div class="lg:w-7/12 lg:pl-10 mt-10 lg:mt-0 text-container">
 
         <h4 class="yellow-color text-lg font-semibold uppercase mb-2">Our Expertise</h4>
-        <h2 class="text-3xl font-bold mb-6">Fire Alarm Solutions with Over 25 Years of Experience</h2>
+        <h2 class="text-2xl lg:text-3xl font-bold mb-6">Fire Alarm Solutions with Over 25 Years of Experience</h2>
         <p class="text-lg mb-6">NorthStar Systems was founded by Toby Woods, a seasoned expert with over 25 years of experience in the fire alarm industry. Toby's career began in the submarine service, where he learned the critical importance of attention to detail and precision. These values have carried over into every aspect of his work in the fire alarm industry. Having worked across various roles, including installation, system planning, and project management, Toby has developed a deep understanding of the industry's complexities and the importance of creating safe environments.</p>
 
         <!-- Our Vision Accordion -->
@@ -205,7 +209,7 @@
               Our Vision</h4>
             <!-- Arrow icon -->
             <span class="text-2xl transition-transform duration-500"
-              :class="openAccordion === 1 ? 'rotate-180 yellow-color' : ''">↓</span>
+              :class="openAccordion === 1 ? 'rotate-180 yellow-color' : ''">^</span>
           </div>
 
           <div x-show="openAccordion === 1" x-transition:enter="transition-all ease-linear duration-500"
@@ -225,7 +229,7 @@
               OUR VALUES</h4>
             <!-- Arrow icon -->
             <span class="text-2xl transition-transform duration-500"
-              :class="openAccordion === 2 ? 'rotate-180 yellow-color' : ''">↓</span>
+              :class="openAccordion === 2 ? 'rotate-180 yellow-color' : ''">^</span>
           </div>
 
           <ul x-show="openAccordion === 2" x-transition:enter="transition-all ease-linear duration-500"
@@ -261,10 +265,10 @@
     </div>
   </section>
 
-  <section class=" common-why-us-sec">
+  <section class="md:py-1 common-why-us-sec">
     <div class="container mx-auto">
 
-      <div class="flex servivecommon-why-us-sec flex-col lg:flex-row gap-3 lg:space-x-20 lg:gap-10 items-center lg:items-start p-5 lg:py-10">
+      <div class="flex md:py-1 servivecommon-why-us-sec lg:items-center flex-col lg:flex-row gap-3 lg:space-x-20 lg:gap-10 items-center lg:items-start p-5 lg:py-20">
   
         
         <!-- Right Section (Image and Badge) -->
@@ -282,7 +286,7 @@
         </div>
   
         <!-- Left Section (Text Content) -->
-        <div class="w-full space-y-6 lg:mt-[100px] section-content">
+        <div class="w-full space-y-6  section-content">
           <h4 class="blue-heading text-xl font-bold uppercase mb-4">MEET TOBY WOODS
           </h4>
           <h2 class="font-bold text-4xl text-gray-700">Leadership You Can Trust
@@ -329,7 +333,7 @@
   <!-- why us section start -->
 
   <section class="container min-w-full">
-    <div class="flex aboutcommon-why-us-sec flex-col lg:flex-row gap-3  items-center lg:items-start p-10 lg:py-20">
+    <div class="flex aboutcommon-why-us-sec flex-col lg:flex-row gap-3  items-center lg:items-start md:p-5 lg:p-10 lg:py-20">
 
       <!-- Left Section (Text Content) -->
       <div class="w-10/12 lg:w-7/12 space-y-3 lg:mt-[70px] section-content">
@@ -347,7 +351,7 @@
 
         <!-- Badge -->
         <div class="absolute top-0 right-0 bg-[#aa0000] text-white px-6 py-3  shadow-lg badge">
-          <h3 class="text-3xl font-bold"><span id="counter">0</span>+</h3>
+          <h3 class="text-3xl font-bold"><span id="counter">25</span>+</h3>
           <p class="text-sm">Years experience</p>
         </div>
       </div>
@@ -363,19 +367,19 @@
       
       <!-- Left side: Logo -->
       <div class="mb-4 md:mb-0">
-        <img src="/assets/images/NorthStartLogo-White.png" alt="NorthStar Systems Logo" class="h-[80px]">
+        <img src="/assets/images/NorthStartLogo-White.png" alt="NorthStar Systems Logo" class="lg:h-[130px] md:h-[100px] h-[130px]">
       </div>
   
       <!-- Center: Text and Links -->
-      <div class="text-center text-white mb-4 md:mb-0">
-        <a href="#" class="text-white text-lg hover:underline mr-2">Privacy Policy</a> |
-        <a href="#" class="text-white text-lg hover:underline ml-2">Terms and Conditions</a>
-        <p class="text-sm mt-2">Copyright © 2024 NorthStar Systems, LLC</p>
+      <div class="text-center text-white mb-4 md:mb-0 ">
+        <a href="#" class="text-white text-2xl lg:text-3xl md:text-xl sm:text-lg hover:underline mr-2 footer-privacy">Privacy Policy |</a> 
+        <a href="#" class="text-white text-2xl lg:text-3xl md:text-xl sm:text-lg hover:underline ml-2 footer-privacy">Terms and Conditions</a>
+        <p class=" mt-2 text-md lg:text-xl md:text-lg sm:text-base">Copyright © 2024 NorthStar Systems, LLC</p>
       </div>
   
       <!-- Right side: NICET certification logo and text -->
       <div class="text-center flex flex-col items-center text-white">
-        <img src="/assets/images/nicet_logo.2f1e347e.png" alt="NICET Certification" class="h-[40px]">
+        <img src="/assets/images/nicet_logo.2f1e347e.png" alt="NICET Certification" class="lg:h-[85px] md:h-[60px] h-[70px]">
         <p class="text-sm mt-2 leading-tight text-center">We support and encourage <br> NICET certification</p>
       </div>
   
