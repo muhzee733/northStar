@@ -399,7 +399,20 @@ display: flex;
 .section-left h3{
     text-align: left;
 }
+ .certification{
+    flex-direction: column;
+    align-items: center;
+   
+ }
+ .life-safety{
+    margin-left:0 !important;
+ }
+ .certification img{
+    align-self: center;
+    margin-bottom: 8px;
+ }
 }
+
 @media screen and (max-width:600px) {
 
     .home-section .partner-text {
@@ -471,7 +484,7 @@ justify-content: center;
     }
     .common-red-blue-sec .our-approach{
             gap:20px;
-            text-align: center;
+            
     }
     .project-section-2 .paper-mill{
         flex-direction: column-reverse;
@@ -484,12 +497,36 @@ justify-content: center;
  
 
 }
-
-
-
-
-
-
+@media screen and (max-width:768px) {
+.who-we-are{
+    display: flex;
+    flex-direction: column;
+}
+.common-why-us-sec{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.who-we-are-section {
+    padding: 40px 10px !important;
+    
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 
+}
+.contact-us {
+display: flex;
+    flex-direction: column !important;
+}
+.who-we-are{
+    flex-direction: column !important;
+}
+.who-we-are-section .inset-image{
+    width:180px;
+    height:121px;
+}
+}
 
 /* Slide-in from right animation */
 @keyframes slideInRight {
