@@ -363,11 +363,23 @@ justify-content: center;
  
 
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .who-we-are-section .inset-image{
         width:120px;
         height:90px;
 }
+  .certification {
+    display:flex;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .life-safety{
+    margin-left:0 !important;
+  }
+  .certificate img{
+     margin-bottom: 1rem !important;
+  }
+
 }
 @media screen and (max-width:768px) {
 .who-we-are{
