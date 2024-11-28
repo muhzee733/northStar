@@ -5,7 +5,7 @@ const services = [
         points: [
             {
                 p_title: `Permit Drawings, Data & Listing Sheets`,
-                p_exp: `: We prepare thorough documentation that addresses all regulatory requirements, facilitating smooth interactions with AHJs.`
+                p_exp: `We prepare thorough documentation that addresses all regulatory requirements, facilitating smooth interactions with AHJs.`
             },
             {
                 p_title: `Efficient Approvals`,
