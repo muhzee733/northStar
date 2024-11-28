@@ -399,6 +399,44 @@ display: flex;
         padding: 10px 40px;
     }
 }
+@media screen and (max-width:576px){
+    .container{
+        max-width: 400px !important;
+    }
+    .who-we-are-section .inset-image{
+        width:120px;
+        height:90px;
+}
+.banner{
+    min-height: 550px !important;
+}
+.banner-btn{
+    margin-bottom: 25px;
+}
+.home-heading{
+    text-align: left !important;
+}
+.section-left h2{
+    text-align: left;
+}
+.section-left h3{
+    text-align: left;
+}
+ .certification{
+    flex-direction: column;
+    align-items: center;
+   
+ }
+ .life-safety{
+    margin-left:0 !important;
+ }
+ .certification img{
+    align-self: center;
+    margin-bottom: 8px;
+ }
+ 
+
+}
 
 @media screen and (max-width:600px) {
 
@@ -477,8 +515,8 @@ justify-content: center;
         padding:10px;
     }
     .who-we-are-section .inset-image{
-            width:180px;
-            height:121px;
+            width:100px;
+            height:50px;
     }
     .common-action-sec{
         border-radius: 10px  !important;
