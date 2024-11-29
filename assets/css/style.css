@@ -74,7 +74,9 @@ html {
 .blue-bg {
     background-color: rgb(var(--main-blue-color));
 }
-
+.blue{
+    background-color: #2f587b;
+}
 .red-heading {
     color: rgb(var(--main-red-color));
 }
@@ -358,6 +360,17 @@ max-width: 42rem;
     .section-right p{
         padding: 10px 0px !important;
     }
+    .safar{
+        bottom: 10px !important;
+        left: 10px !important;
+    }
+    .safar .text-right-container{
+        padding: 20px;
+    }
+    .safar h4{
+      font-size: 25px;
+      padding: 0px 0px
+    }
 }
 @media screen and (max-width:768px) {
     .container{
@@ -366,10 +379,6 @@ max-width: 42rem;
 .who-we-are{
     display: flex;
     flex-direction: column;
-}
-.common-why-us-sec{
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
 }
 .contact-us{
     display: flex;
@@ -407,6 +416,7 @@ display: flex;
         width:120px;
         height:90px;
 }
+
 .banner{
     min-height: 550px !important;
 }
@@ -416,8 +426,13 @@ display: flex;
 .home-heading{
     text-align: left !important;
 }
+.common-why-us-sec {
+    padding: 10px !important;
+}
 .section-left h2{
     text-align: left;
+    padding: 10px 0px;
+    font-size: 25px !important;
 }
 .section-left h3{
     text-align: left;
@@ -426,6 +441,12 @@ display: flex;
     flex-direction: column;
     align-items: center;
    
+ }
+ .aboutsection-left{
+    padding: 0px 10px !important ;
+ }
+ .aboutsection-right p{
+    padding: 15px 10px !important;
  }
  .life-safety{
     margin-left:0 !important;
@@ -437,7 +458,12 @@ display: flex;
  
 
 }
+@media screen and (min-width:1440px) {
+    .aboutsection-left{
+        padding-right: 100px;
 
+    }
+}
 @media screen and (max-width:600px) {
 
     .home-section .partner-text {
@@ -447,10 +473,21 @@ display: flex;
     .banner-content h5{
         letter-spacing: normal;
     }
-    .home-section .banner-btn{
+    /* .home-section .banner-btn{
 display: flex;
-justify-content: center;
+justify-content: flex-start;
+    } */
+    .home-section .welcome-text {
+        color: white;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        left: 1%;
     }
+.banner-box{
+    left: 0;
+    padding: 0px;
+}
     .banner {
         align-items: center ;
     } 
@@ -533,11 +570,14 @@ justify-content: center;
         flex-direction: column;
     }
     .common-why-us-sec{
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .section-left h2{
+        padding: 10px 0px !important;
     }
     .who-we-are-section {
-        padding: 40px 10px !important;
+        padding: 20px 10px !important;
         
     }
     .common-action-sec{
@@ -562,6 +602,9 @@ justify-content: center;
         width:180px;
         height:121px;
     }
+    .aboutsection-right p{
+        padding: 10px 9px !important;
+        }
     }
 @media screen and (max-width:576px){
     .container{
@@ -576,6 +619,9 @@ justify-content: center;
     .who-we-are-section .inset-image{
         width:120px;
         height:90px;
+}
+.common-home-section{
+    padding: 0px !important;
 }
 .home-section .partner-text{
     font-size: 25px !important;
