@@ -295,6 +295,10 @@ max-width: 42rem;
         padding: 3rem 1rem;
         border: none;
     }
+    .aboutsection-left{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
     .nav-links a{
         font-size: 17px !important;
     }
@@ -307,16 +311,46 @@ max-width: 42rem;
     .phone a{
         font-size: 17px;
     }
+    .expertise{
+       flex-direction: column !important;
+    }
+    .expertise-width{
+        width: 100% !important;
+    }
+    .servivecommon-why-us-sec h2{
+        font-size: 2rem !important;
+    }
     .service-point-1-heading{
         padding-right: 0px ;
         font-size: 16px;
         font-weight: 600;
+    }
+    .service-section-content{
+        margin-left: 0px !important;
     }
     .service-point-2-heading{
         padding-right: 0px ;
         font-size: 16px;
         font-weight: 600;
     }
+    .aboutsection-right-content{
+padding: 0px !important;
+    }
+    .section-left h2 {
+padding: 0px 20px 0px 0px !important;
+
+    }
+    .section-content{
+        width: 100% !important;
+    }
+    .about-unique-sec{
+        width: 50% !important;
+        padding: 0px !important;
+    }
+    .about-unique-sec p{
+        padding: 0px !important;
+    }
+   
     .tick-icon{
         padding: 4px;
     }
@@ -324,9 +358,7 @@ max-width: 42rem;
         display: flex !important;
         flex-direction: column !important;
     }
-    .section-content{
-        width: 100% !important;
-    }
+
     .contact-us{
         flex-direction: row !important;
     }
