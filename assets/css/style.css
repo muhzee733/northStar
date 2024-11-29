@@ -681,6 +681,22 @@ justify-content: flex-start;
         width:120px;
         height:90px;
 }
+.servivecommon-why-us-sec h2{
+    font-size: 1.6rem !important;
+}
+.servivecommon-why-us-sec h4{
+    font-size: 1rem !important;
+}
+.section-image{
+    align-items: center;
+
+}
+.about-unique-sec{
+    width: 100% !important;
+}
+.common-why-us-sec{
+    padding: 20px 0px 50px 0px !important;
+}
 .common-red-blue-sec 
 .common-home-section{
     padding: 0px !important;
@@ -843,7 +859,9 @@ justify-content: flex-start;
 
 /* Mobile styles */
 @media (max-width: 1023px) {
-
+.about-service-second-sec{
+    flex-direction: column-reverse;
+}
     .expertise-section .text-container,
     .expertise-section .text-right-container,
     .expertise-section.reverse-animation .reverse-text-container {
