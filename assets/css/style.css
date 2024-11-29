@@ -273,6 +273,9 @@ max-width: 42rem;
     font-weight: 400;
     border-radius: 15px;
 }
+.section-content h2{
+    margin-top: 0px !important;
+}
 .who-we-are{
     padding: 6rem .9rem;
 }
@@ -371,6 +374,16 @@ max-width: 42rem;
       font-size: 25px;
       padding: 0px 0px
     }
+    .text-left li{
+        font-size: 1.1rem !important;
+    }
+    .expertise-content h2{
+        font-size: 1.9rem !important;
+    }
+    .expertise-content p{
+        font-size: 1.1rem !important;
+        text-align: left;
+    }
 }
 @media screen and (max-width:768px) {
     .container{
@@ -418,7 +431,9 @@ display: flex;
 }
 
 .banner{
-    min-height: 550px !important;
+    min-height: 470px !important;
+    justify-content: flex-start !important;
+    padding-top: 60px !important;
 }
 .banner-btn{
     margin-bottom: 25px;
@@ -455,7 +470,21 @@ display: flex;
     align-self: center;
     margin-bottom: 8px;
  }
- 
+ .banner-content h5{
+   letter-spacing: 1px !important;
+   left: 16% !important;
+}
+.banner-content .cta-btn{
+    font-size: 1rem !important;
+}
+.banner-box h2{
+font-size: 42px !important;
+margin-bottom: 8px !important;
+}
+ .who-we-are .text-container h2{
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+ }
 
 }
 @media screen and (min-width:1440px) {
@@ -611,7 +640,7 @@ justify-content: flex-start;
         max-width: 400px !important;
     }
     .who-we-are-section{
-        padding: 10px 10px !important;
+        padding: 30px 10px !important;
     }
     .common-action-sec{
         border-radius: 10px !important;
@@ -620,6 +649,7 @@ justify-content: flex-start;
         width:120px;
         height:90px;
 }
+.common-red-blue-sec 
 .common-home-section{
     padding: 0px !important;
 }
@@ -646,6 +676,7 @@ justify-content: flex-start;
     align-items: center;
    
  }
+
  .contact-us{
     align-items: flex-start;
 }
