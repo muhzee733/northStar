@@ -452,6 +452,18 @@ padding: 0px 20px 0px 0px !important;
     .detailservice-content .image-container{
         width: 100%;
     }
+    .contactus .contact-section-blue-bg{
+        padding: 3rem !important;
+    }
+    .resource-first-sec{
+      padding: 1.6rem 0px !important;
+    }
+    .footer-privacy{
+        font-size: 23px;
+    }
+    .footer-section p{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:768px) {
     .container{
@@ -583,7 +595,7 @@ display: flex;
     margin-left:0 !important;
  }
  .certification img{
-    align-self: center;
+    align-self: baseline !important;
     margin-bottom: 8px;
  }
  .banner-content h5{
@@ -824,10 +836,6 @@ justify-content: flex-start;
 }
  .life-safety{
     margin-left:0 !important;
- }
- .certification img{
-    align-self: center;
-    margin-bottom: 8px;
  }
 }
 
