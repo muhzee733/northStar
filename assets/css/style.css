@@ -440,7 +440,7 @@ padding: 0px 20px 0px 0px !important;
         font-size: 1.1rem !important;
         text-align: left;
     }
-    .detailservice-content{
+    .detailservice-content {
         flex-direction: column;
     }
     .detailservice-content .text-container{
