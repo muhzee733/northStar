@@ -315,9 +315,21 @@ max-width: 42rem;
     .phone a{
         font-size: 17px;
     }
+    .home-expertise-sec{
+        padding: 50px 20px !important;
+    }
+    .home-expertise-sec .relative{
+        padding: 0px 0px !important;
+    }
     .contact-right-btn a{
         padding: 20px;
         font-size: 25px;
+    }
+    .contact-left-content h2{
+        font-size: 1.9rem;
+    }
+    .contact-left-content p{
+        font-size: 1.2rem;
     }
     .contact-section-blue-bg{
         padding: 50px;
@@ -505,6 +517,12 @@ display: flex;
     text-align: left;
     padding: 10px 0px;
     font-size: 25px !important;
+}
+.home-red-blue-sec{
+    padding: 40px 0px !important;
+}
+.home-red-blue-sec ul li{
+    font-size: 15px !important;
 }
 .detailservice-title{
     margin-top: 5px !important;
@@ -723,9 +741,6 @@ justify-content: flex-start;
 }
 .about-unique-sec{
     width: 100% !important;
-}
-.common-why-us-sec{
-    padding: 20px 10px 50px 10px !important;
 }
 .expertise-content h2{
     font-size: 1.5rem !important;
