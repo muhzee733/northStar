@@ -75,7 +75,7 @@ html {
     background-color: rgb(var(--main-blue-color));
 }
 .blue{
-    background-color: #2f587b;
+    background-color: #2f587bc2;
 }
 .red-heading {
     color: rgb(var(--main-red-color));
@@ -235,6 +235,10 @@ fill: currentColor; /* Makes SVG icon inherit text color */
 }
 .home-section{
     border-bottom: 15px solid #aa0000;
+}
+.text-section{
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
 }
 .text-container h2 {
 font-weight: 600 !important;
@@ -430,12 +434,24 @@ padding: 0px 20px 0px 0px !important;
     flex-direction: column;
     /* padding: 40px  */
 }
+.service-second-sec {
+    padding: 50px 20px !important;
+}
+.aboutcommon-why-us-sec{
+    padding: 50px 25px !important;
+}
+.aboutcommon-why-us-sec .about-unique-sec{
+    width: 100% !important;
+}
 .contact-us {
 display: flex;
     flex-direction: column !important;
 }
 .who-we-are{
     flex-direction: column !important;
+}
+.section-content{
+    width: 100% !important;
 }
 .who-we-are-section .inset-image{
     width:180px;
@@ -560,9 +576,6 @@ justify-content: flex-start;
         font-size: 22px;
         padding: 17px;
     }
-    .footer-privacy{
-        font-size: 25px;
-    }
     .who-we-are-section {
         padding: 20px 10px !important;
     }
@@ -631,8 +644,9 @@ justify-content: flex-start;
         flex-direction: column;
     }
     .common-why-us-sec{
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
+        padding: 1rem !important;
+        /* padding-top: 1rem !important;
+        padding-bottom: 1rem !important; */
     }
     .section-left h2{
         padding: 10px 0px !important;
@@ -657,7 +671,8 @@ justify-content: flex-start;
         flex-direction: column !important;
     }
     .who-we-are{
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
+        gap: 20px;
     }
     .who-we-are-section .inset-image{
         width:180px;
@@ -695,7 +710,13 @@ justify-content: flex-start;
     width: 100% !important;
 }
 .common-why-us-sec{
-    padding: 20px 0px 50px 0px !important;
+    padding: 20px 10px 50px 10px !important;
+}
+.expertise-content h2{
+    font-size: 1.5rem !important;
+}
+.footer-privacy{
+    font-size: 21px !important;
 }
 .common-red-blue-sec 
 .common-home-section{
@@ -703,9 +724,6 @@ justify-content: flex-start;
 }
 .home-section .partner-text{
     font-size: 25px !important;
-}
-.banner{
-    min-height: 550px !important;
 }
 .banner-btn{
     margin-bottom: 25px;
@@ -715,6 +733,7 @@ justify-content: flex-start;
 }
 .section-left h2{
     text-align: left;
+    font-size: 1.5rem !important;
 }
 .section-left h3{
     text-align: left;
@@ -1019,30 +1038,23 @@ justify-content: flex-start;
 }
 
 /* Initial State: No opacity or transformation */
-.who-we-are-section .image-container,
+/* .who-we-are-section .image-container,
 .who-we-are-section .text-container,
 .who-we-are-section .icon-text {
     opacity: 0;
     transform: translateY(20px);
-    /* Text starts slightly down */
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
-
-/* Slide-in from left for the image */
 .who-we-are-section .image-container {
     opacity: 0;
     transform: translateX(-50px);
-    /* Initially offset to the left */
     transition: opacity 1.5s ease, transform 1.5s ease;
-    /* Ensure transitions apply */
 }
 
-/* When animate class is added */
 .who-we-are-section .image-container.animate {
     opacity: 1;
     transform: translateX(0);
-    /* Slide in from left */
-}
+} */
 
 /* Fade-in and slide-up for text */
 .who-we-are-section .text-container.animate,
@@ -1158,7 +1170,10 @@ justify-content: flex-start;
     /* Slide-up effect for text */
     transition: opacity 1s ease, transform 1s ease;
 }
-
+.common-why-us-sec .section-image{
+    transform: translateX(0px) !important;
+    opacity: 1;
+}
 /* When the section is in view, animate the elements */
 .common-why-us-sec .section-content.animate,
 .common-why-us-sec .section-image.animate,

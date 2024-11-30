@@ -49,7 +49,7 @@ let observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 // Observe sections for animation
-document.querySelectorAll('.common-why-us-sec .section-content, .common-why-us-sec .section-image, .common-why-us-sec .badge').forEach((el) => {
+document.querySelectorAll('.common-why-us-sec .section-content, .common-why-us-sec, .common-why-us-sec .badge').forEach((el) => {
   observer.observe(el);
 });
 
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         // Add the "animate" class to trigger the animations
-        entry.target.classList.add("animate");
+        // entry.target.classList.add("animate");
         // Stop observing once the animation is triggered
         observer.unobserve(entry.target);
       }
