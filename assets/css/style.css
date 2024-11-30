@@ -477,7 +477,9 @@ display: flex;
         width:120px;
         height:90px;
 }
-
+.service-items ul li{
+    margin-top: 0px !important;
+}
 .banner{
     min-height: 470px !important;
     justify-content: flex-start !important;
@@ -496,6 +498,12 @@ display: flex;
     text-align: left;
     padding: 10px 0px;
     font-size: 25px !important;
+}
+.detailservice-title{
+    margin-top: 5px !important;
+}
+.detailservice-content p{
+    margin-top: 10px !important;
 }
 .section-left h3{
     text-align: left;
