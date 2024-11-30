@@ -141,13 +141,13 @@
          <div class="w-full lg:w-1/2 lg:px-1 lg:px-1 flex flex-col justify-center text-container">
            <div>
              <!-- Section Heading -->
-             <h4 class="text-md lg:text-xl blue-heading font-bold">
+             <h4 class="text-md lg:text-[1rem] blue-heading font-bold">
                WHO WE ARE
              </h4>
-             <h2 class="text-2xl lg:text-3xl font-bold  font-bold mb-4">
+             <h2 class="text-2xl lg:text-[1.9rem] font-bold  font-bold mb-4">
                Transforming Fire Alarm Solutions with Unmatched Expertise
              </h2>
-             <p class=" text-justify md:text-lg mb-6">
+             <p class=" text-left md:text-[1.2rem] mb-6">
                At NorthStar Systems, we transform complex fire alarm and low-voltage challenges into seamless,
                code-compliant solutions. With over 25 years of industry expertise, we empower fire alarm contractors with
                precision-crafted permit drawings and expert guidance, ensuring your projects are executed with the highest
@@ -201,14 +201,14 @@
       <!-- Right Section (Text Content) -->
       <div class="lg:w-7/12 expertise-width  lg:pl-10 mt-10 lg:mt-0 text-container">
 
-        <h4 class="yellow-color text-lg font-semibold uppercase mb-2">Our Story</h4>
-        <h2 class="text-2xl md:text-4xl md:pr-[6rem]  font-bold mb-6">Fire Alarm Solutions with Over 25 Years of Experience</h2>
-        <p class="text-lg mb-6">NorthStar Systems was founded by Toby Woods, a seasoned expert with over 25 years of experience in the fire alarm industry. Toby's career began in the submarine service, where he learned the critical importance of attention to detail and precision. These values have carried over into every aspect of his work in the fire alarm industry. Having worked across various roles, including installation, system planning, and project management, Toby has developed a deep understanding of the industry's complexities and the importance of creating safe environments.</p>
+        <h4 class="yellow-color text-[1rem] font-semibold uppercase mb-2">Our Story</h4>
+        <h2 class="text-2xl md:text-[1.9rem] md:pr-[6rem]  font-bold mb-6">Fire Alarm Solutions with Over 25 Years of Experience</h2>
+        <p class="text-[1.2rem] mb-6">NorthStar Systems was founded by Toby Woods, a seasoned expert with over 25 years of experience in the fire alarm industry. Toby's career began in the submarine service, where he learned the critical importance of attention to detail and precision. These values have carried over into every aspect of his work in the fire alarm industry. Having worked across various roles, including installation, system planning, and project management, Toby has developed a deep understanding of the industry's complexities and the importance of creating safe environments.</p>
 
         <div class="our-vision mb-6" x-data="{ openAccordion: 1 }">
           <div class="flex justify-between items-center cursor-pointer border-b-2 border-white py-4"
             @click="openAccordion = (openAccordion === 1 ? null : 1)">
-            <h4 :class="openAccordion === 1 ? 'text-yellow-400' : 'text-white'" class="text-lg font-semibold uppercase">
+            <h4 :class="openAccordion === 1 ? 'yellow-color' : 'text-white'" class="text-lg font-semibold uppercase">
               Our Vision
             </h4>
             <!-- Arrow icon -->
@@ -230,7 +230,7 @@
         <div class="our-values">
           <div class="flex justify-between items-center cursor-pointer border-b-2 border-white py-4"
             @click="openAccordion = (openAccordion === 2 ? null : 2)">
-            <h4 :class="openAccordion === 2 ? 'text-yellow-400' : 'text-white'" class="text-lg font-semibold uppercase">
+            <h4 :class="openAccordion === 2 ? 'yellow-color' : 'text-white'" class="text-lg font-semibold uppercase">
               OUR VALUES</h4>
             <!-- Arrow icon -->
             <span class="text-2xl transition-transform duration-500"
@@ -273,7 +273,7 @@
   <section class="md:py-1 common-why-us-sec">
     <div class="container mx-auto">
 
-      <div class="flex md:py-1 servivecommon-why-us-sec lg:items-center flex-col lg:flex-row gap-3 lg:space-x-20 lg:gap-10 items-center lg:items-start p-5 lg:py-20">
+      <div class="flex md:py-1 servivecommon-why-us-sec lg:items-center flex-col-reverse lg:flex-row gap-3 lg:space-x-20 lg:gap-10 items-center lg:items-start p-5 lg:py-20">
   
         
         <!-- Right Section (Image and Badge) -->
@@ -292,11 +292,11 @@
   
         <!-- Left Section (Text Content) -->
         <div class="w-full space-y-6  section-content service-section-content ">
-          <h4 class="blue-heading text-xl font-bold uppercase mb-[6px] ">MEET TOBY WOODS
+          <h4 class="blue-heading text-[1rem] font-bold uppercase mb-[6px] ">MEET TOBY WOODS
           </h4>
-          <h2 class="font-bold text-3xl md:text-4xl text-gray-700">Leadership You Can Trust
+          <h2 class="font-bold text-3xl md:text-[1.9rem] text-gray-700">Leadership You Can Trust
           </h2>
-          <p class="text-lg  lg:w-10/12">Toby's extensive technical expertise and dedication to excellence
+          <p class="text-[1.2rem]  lg:w-10/12">Toby's extensive technical expertise and dedication to excellence
             make him an invaluable leader at NorthStar Systems. His insider
             knowledge of installation practices and ability to navigate
             complex building codes position him as a trusted resource for
@@ -334,12 +334,10 @@
   <section class="min-w-full" >
     <div class="container-fluid">
       <div class="flex aboutcommon-why-us-sec flex-col lg:flex-row gap-3  items-center md:p-5 lg:p-10 lg:py-20 ">
-
-        <!-- Left Section (Text Content) -->
         <div class="w-10/12 pl-[40px] lg:w-7/12 space-y-3 section-content about-unique-sec">
-          <h4 class="blue-heading text-[1rem] sm:text-md lg:text-lg font-bold uppercase mb-1">our commitment to excellence</h4>
-          <h2 class="font-bold text-[1.9rem] sm:text-3xl lg:text-4xl">What Makes Us Unique</h2>
-          <p class="text-md  lg:w-10/12 text-left pr-[92px]">NorthStar Systems distinguishes itself through its personalized
+          <h4 class="blue-heading lg:text-[1rem] sm:text-2xl text-sm sm:text-md font-bold uppercase mb-1">our commitment to excellence</h4>
+          <h2 class="font-bold md:text-[1.9rem] text-2xl sm:text-3xl">What Makes Us Unique</h2>
+          <p class="text-[1.2rem]  lg:w-10/12 text-left pr-[92px]">NorthStar Systems distinguishes itself through its personalized
             approach and unparalleled technical expertise. We provide solutions that comply with regulatory standards, ensuring that your projects receive on time approvals. Our commitment to quality and accuracy makes
             us a valuable partner in your journey to building safer spaces.</p>
         </div>

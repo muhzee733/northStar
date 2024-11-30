@@ -320,6 +320,7 @@ max-width: 42rem;
     }
     .home-expertise-sec .relative{
         padding: 0px 0px !important;
+        
     }
     .contact-right-btn a{
         padding: 20px;
@@ -480,6 +481,9 @@ display: flex;
     bottom: 0px !important;
     width: 15%;
 }
+.contact-left-content h2 {
+    font-size: 1.5rem;
+}
 }
 @media screen and (max-width:992px) {
     .contact-us{
@@ -517,6 +521,19 @@ display: flex;
     text-align: left;
     padding: 10px 0px;
     font-size: 25px !important;
+}
+.contact-left-content h2 {
+    font-size: 1.5rem;
+}
+.contact-left-content p {
+    font-size: 0.8rem;
+}
+.contact-right-btn a{
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+}
+.home-expertise-sec .relative{
+    gap: 20px;
 }
 .home-red-blue-sec{
     padding: 40px 0px !important;
@@ -702,6 +719,10 @@ justify-content: flex-start;
     .contact-us {
     display: flex;
         flex-direction: column !important;
+    }
+    .contact-right-btn a{
+        padding: 13px 20px !important;
+        font-size: 20px !important;
     }
     .who-we-are{
         flex-direction: column-reverse !important;
