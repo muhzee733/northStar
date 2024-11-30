@@ -440,6 +440,18 @@ padding: 0px 20px 0px 0px !important;
         font-size: 1.1rem !important;
         text-align: left;
     }
+    .detailservice-content{
+        flex-direction: column;
+    }
+    .detailservice-content .text-container{
+        width: 100%;
+    }
+    .detailservice-content .text-container ul{
+        gap: 5rem;
+    }
+    .detailservice-content .image-container{
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px) {
     .container{
@@ -472,6 +484,9 @@ display: flex;
 }
 .section-content{
     width: 100% !important;
+}
+.detailservice-content .text-container ul{
+    gap: 2rem;
 }
 .who-we-are-section .inset-image{
     width:180px;
@@ -537,6 +552,9 @@ display: flex;
 }
 .home-red-blue-sec{
     padding: 40px 0px !important;
+}
+.detailservice-content{
+   padding: 0px 0px !important;
 }
 .home-red-blue-sec ul li{
     font-size: 15px !important;
@@ -719,6 +737,9 @@ justify-content: flex-start;
     .contact-us {
     display: flex;
         flex-direction: column !important;
+    }
+    .expertise-content h2{
+        font-size: 1.5rem !important;
     }
     .contact-right-btn a{
         padding: 13px 20px !important;
