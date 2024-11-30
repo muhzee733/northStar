@@ -315,6 +315,13 @@ max-width: 42rem;
     .phone a{
         font-size: 17px;
     }
+    .contact-right-btn a{
+        padding: 20px;
+        font-size: 25px;
+    }
+    .contact-section-blue-bg{
+        padding: 50px;
+    }
     .expertise{
        flex-direction: column !important;
     }
