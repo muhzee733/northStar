@@ -535,6 +535,9 @@ display: flex;
     justify-content: flex-start !important;
     padding-top: 60px !important;
 }
+.detail-home-sec p{
+font-size: 15px;
+}
 .banner-btn{
     margin-bottom: 25px;
 }
