@@ -46,7 +46,7 @@ const services = [
     },
     {
         title: `Low-Voltage System Drafting`,
-        description: `Our drafting services cover a wide range of low-voltage systems, including Alarm, Surveillance, Access control, and more. We create detailed and accurate installations plan that serve as the foundation for successful installations of complex systems.`,
+        description: `We create detailed and accurate installation plans that serve as the foundation for successful installations of complex systems.`,
         points: [
             {
                 p_title: `Detailed Drafting`,
