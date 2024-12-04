@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="shortcut icon" href="/assets/images/main logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>About - North Star</title>
   <style>
     .skewed-divider {
@@ -71,7 +72,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
             </svg>
-            <a href="tel:(208) 503-1832" class="ml-2  text-xl">(208) 503-1832</a> 
+            <a class="ml-2  text-xl">(208) 503-1832</a> 
         </div>
       </div>
     </div>
@@ -110,7 +111,7 @@
     </div>
     <!-- Fully positioned slanted red bar at the bottom -->
     
-    <div class="red-white-bar w-full absolute bottom-0" style="border-bottom: 2px solid beige;">
+    <div class="red-white-bar w-full absolute bottom-0">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="0,100 100,0 100,100" fill="rgb(170,0,0)"/>
         <polygon points="0,100 0,0 100,0" fill="white"/>
@@ -269,7 +270,7 @@
   <section class="md:py-1 common-why-us-sec">
     <div class="container mx-auto">
 
-      <div class="flex md:py-1 servivecommon-why-us-sec lg:items-center flex-col-reverse lg:flex-row gap-3 lg:space-x-20 lg:gap-10 items-center lg:items-start p-5 lg:py-20">
+      <div class="flex md:py-1 servivecommon-why-us-sec lg:items-center px-0 flex-col-reverse lg:flex-row gap-3 lg:space-x-20 lg:gap-10 items-center lg:items-start p-5 lg:py-20">
   
         
         <!-- Right Section (Image and Badge) -->
@@ -279,20 +280,33 @@
           <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="tobyw-ns" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/tobyw-ns?trk=profile-badge"></a></div>
         </div> -->
   
-        <div class="w-full flex items-center opacity-1 translate-x-[0px]  mt-10 lg:mt-0 relative section-image flex flex-col lg:mb-0 mb-8 sm:mb-[50px]">
+        <div class="w-full flex opacity-1 relative translate-x-[0px]  mt-10 lg:mt-0 section-image flex flex-col lg:mb-0 mb-8 sm:mb-[50px]" style="margin-left: 0px;">
           <!-- First (Background) Image -->
-          <img class="w-full max-w-[80%] shadow-lg" src="/assets/images/user/4.jpg" alt="Fire Alarm System Image">
-  
+          <img class="w-full max-w-[100%] relative shadow-lg" src="/assets/images/user/4.jpg" alt="Fire Alarm System Image">
+
+  <div class="linkdin absolute bottom-0 right-0 w-[200px]" style="box-shadow: 10px 10px 20px lightgray">
+
+
+      <div class="linkdin-head text-blue-400 rounded-tl-[9px] md:right[0px] rounded-tr-[9px] rounded-bl-[0px] rounded-br-[0px] bg-gray-100 py-3 pl-4 font-semibold text-[18px] ">
+        Linked <i class="fa-brands fa-linkedin" style="font-size: 20px;"></i></div>
+      <div class="linkdin-body bg-white py-3 rounded-tl-[0px] rounded-tr-[0px] rounded-bl-[9px] rounded-br-[9px] pl-4">
+        <img src="../assets/images/user/file.png" class=" w-[30%]" alt="">
+        <h6 class="text-black text-[14px] font-semibold" style="line-height: normal; margin-top: 4px;">Tody, Woods, CET</h6>
+        <p class="text-black text-[13px] font-semibold text-gray-700">NorthStar Systems, LLC.</p>
+        <a href="https://www.linkedin.com/in/tobyw-ns?trk=profile-badge"  class="text-[13px] rounded-2xl py-1 px-2 linkdin-profile text-blue-400 mt-5">View Profile</a>
+      </div>
+
+  </div>
             <!-- <div class="badge-base LI-profile-badge absolute -bottom-4 sm:right-[150px] lg:-right-6 sm:w-3/12 w-full lg:w-5/12 h-auto sm:h-5/12" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="tobyw-ns" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/tobyw-ns?trk=profile-badge"></a></div> -->
         </div>
   
         <!-- Left Section (Text Content) -->
-        <div class="w-full space-y-6  section-content service-section-content ">
+        <div class="w-full section-content service-section-content " style="margin-left: 0px;">
           <h4 class="blue-heading text-[1rem] font-bold uppercase mb-[6px] ">MEET TOBY WOODS
           </h4>
           <h2 class="font-bold text-3xl md:text-[1.9rem] text-gray-700">Leadership You Can Trust
           </h2>
-          <p class="text-[1.2rem] text-black lg:w-10/12">Toby's extensive technical expertise and dedication to excellence
+          <p class="text-[1.2rem] text-black ">Toby's extensive technical expertise and dedication to excellence
             make him an invaluable leader at NorthStar Systems. His insider
             knowledge of installation practices and ability to navigate
             complex building codes position him as a trusted resource for
@@ -321,12 +335,6 @@
   </div>
 </div>
   </div>
-
-  <!-- ----- -->
-
-
-  <!-- why us section start -->
-
   <section class="min-w-full" >
     <div class="container-fluid">
       <div class="flex aboutcommon-why-us-sec flex-col lg:flex-row gap-3  items-center md:p-5 lg:p-10 lg:py-20 ">
@@ -337,13 +345,8 @@
             approach and unparalleled technical expertise. We provide solutions that comply with regulatory standards, ensuring that your projects receive on time approvals. Our commitment to quality and accuracy makes
             us a valuable partner in your journey to building safer spaces.</p>
         </div>
-  
-        <!-- Right Section (Image and Badge) -->
         <div class="lg:w-7/12 mt-10 lg:mt-0 relative section-image xl:mr-4 about-unique-sec">
-          <!-- Image -->
           <img class="w-full shadow-lg" src="/assets/images/fire/FIRE2.png" alt="Fire Alarm System Image">
-  
-          <!-- Badge -->
           <div class="absolute top-0 right-0 bg-[#aa0000] text-white px-8 py-3  shadow-lg badge">
             <h3 class="text-6xl font-bold flex  justify-center"><span id="counter">25</span>+</h3>
             <p class="text-sm">Years experience</p>
@@ -354,30 +357,26 @@
     </div>
 
    
-  </section>
-
-  <!-- why us section end -->
-   
-  
-  <footer class="footer-section py-4 px-10 md:px-1">
+  </section>   
+  <footer class="footer-section lg:py-0 md-py-2 px-10 md:px-1">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
       
       <!-- Left side: Logo -->
       <div class="mb-4 md:mb-0">
-        <img src="/assets/images/NorthStartLogo-White.png" alt="NorthStar Systems Logo" class="lg:h-[130px] sm:h-[100px] h-[70px]">
+        <img src="/assets/images/NorthStartLogo-White.png" alt="NorthStar Systems Logo" class="lg:h-[120px] sm:h-[100px] h-[70px]">
       </div>
   
       <!-- Center: Text and Links -->
       <div class="text-center text-white mb-4 md:mb-0 ">
-        <a href="#" class="text-white text-xl lg:text-3xl md:text-xl sm:text-2xl hover:underline mr-2 footer-privacy">Privacy Policy |</a> 
-        <a href="#" class="text-white text-xl lg:text-3xl md:text-xl sm:text-2xl hover:underline ml-2 footer-privacy">Terms and Conditions</a>
-        <p class=" mt-2 text-sm lg:text-xl md:text-lg sm:text-lg">Copyright © 2024 NorthStar Systems, LLC</p>
+        <a href="#" class="text-white text-xl lg:text-2xl md:text-xl sm:text-2xl hover:underline mr-2 footer-privacy">Privacy Policy |</a> 
+        <a href="#" class="text-white text-xl lg:text-2xl md:text-xl sm:text-2xl hover:underline ml-2 footer-privacy">Terms and Conditions</a>
+        <p class=" mt-2 text-sm lg:text-lg md:text-lg sm:text-lg">Copyright © 2024 NorthStar Systems, LLC</p>
       </div>
   
       <!-- Right side: NICET certification logo and text -->
       <div class="text-center flex flex-col items-center text-white">
-        <img src="/assets/images/nicet_logo.2f1e347e.png" alt="NICET Certification" class="lg:h-[85px] sm:h-[60px] h-[40px]">
-        <p class="text-sm mt-2 leading-tight text-center">We support and encourage <br> NICET certification</p>
+        <img src="/assets/images/nicet_logo.2f1e347e.png" alt="NICET Certification" class="lg:h-[60px] sm:h-[60px] h-[40px]">
+        <p class="lg:text-[11px] md:text-[9px] mt-2 leading-tight text-center">We support and encourage <br> NICET certification</p>
       </div>
   
     </div>

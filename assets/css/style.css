@@ -193,7 +193,9 @@ color: #aa0000; /* Color when active */
 .navbar-bottom .phone-icon {
     margin-right: 5px;
 }
-
+ .linkdin-profile{
+border: 1px solid #60A5FA;
+}
     /* Default Style for Phone Section */
 .phone {
 color: #2f587b; /* Blue text color */
@@ -321,6 +323,15 @@ max-width: 42rem;
     .home-expertise-sec .relative{
         padding: 0px 0px !important;
         
+    }
+    .common-why-us-sec .servivecommon-why-us-sec{
+        flex-direction: column-reverse;
+    }
+    .common-why-us-sec .servivecommon-why-us-sec .section-image{
+        margin-left: 0px !important;
+    }
+    .servivecommon-why-us-sec .service-section-content:nth-child(3){
+        width: 100%;
     }
     .contact-right-btn a{
         padding: 20px;
@@ -462,7 +473,7 @@ padding: 0px 20px 0px 0px !important;
         font-size: 23px;
     }
     .footer-section p{
-        font-size: 15px;
+        font-size: 11px;
     }
 }
 @media screen and (max-width:768px) {
@@ -478,6 +489,7 @@ padding: 0px 20px 0px 0px !important;
     flex-direction: column;
     /* padding: 40px  */
 }
+
 .service-second-sec {
     padding: 50px 20px !important;
 }
@@ -511,6 +523,9 @@ display: flex;
 .contact-left-content h2 {
     font-size: 1.5rem;
 }
+.footer-section{
+    padding: 10px 0px ;
+}
 }
 @media screen and (max-width:992px) {
     .contact-us{
@@ -541,8 +556,23 @@ font-size: 15px;
 .banner-btn{
     margin-bottom: 25px;
 }
+.red-white-bar{
+    border-bottom: 0.01px solid rgb(233, 233, 233);
+}
 .home-heading{
     text-align: left !important;
+}
+.linkdin{
+    right: 0% !important;
+    width: 150px !important;
+}
+.linkdin .linkdin-body > a h6{
+   font-size: 10px;
+   line-height: 5px !important;
+   margin-top: 10px !important;
+}
+.linkdin .linkdin-body > a p{
+   font-size: 10px;
 }
 .common-why-us-sec {
     padding: 10px !important;
@@ -1396,7 +1426,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox=
     position: relative;
     height: 25px;
     overflow: hidden;
-    border-bottom: 1px solid lightgray;
 }
 
 .red-white-bar svg {
