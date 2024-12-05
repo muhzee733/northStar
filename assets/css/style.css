@@ -296,7 +296,7 @@ html {
   .container {
     max-width: 1190px;
   }
-  .nav{
+  .nav-links a{
     font-size: 16px !important;
   }
 }
@@ -304,7 +304,7 @@ html {
   .container {
     max-width: 988px !important ;
   }
-  .nav{
+  .nav-links a {
     font-size: 16px !important;
   }
   .expertise-section {
@@ -315,9 +315,7 @@ html {
     padding: 0px !important;
     margin: 0px !important;
   }
-  .nav-links a {
-    font-size: 17px !important;
-  }
+ 
   .navbar-bottom img {
     width: 140px;
   }
