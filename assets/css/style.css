@@ -296,10 +296,16 @@ html {
   .container {
     max-width: 1190px;
   }
+  .nav{
+    font-size: 16px !important;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 988px !important ;
+  }
+  .nav{
+    font-size: 16px !important;
   }
   .expertise-section {
     padding: 3rem 1rem;
@@ -662,6 +668,9 @@ html {
   .aboutsection-left {
     padding-right: 100px;
   }
+  .nav{
+    font-size: 16px !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .home-section .partner-text {
@@ -941,6 +950,7 @@ justify-content: flex-start;
     ),
     url("/assets/images/Home\ BG.png");
   padding: 3rem 0;
+  
 }
 
 /* Initial state for animations */
