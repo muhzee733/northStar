@@ -55,6 +55,10 @@ html {
   font-family: "Roboto", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+.paragraph-text{
+  color: black;
+  font-size: 1.2rem ;
+}
 
 .yellow-btn {
   background-color: rgb(var(--main-yellow-color));
@@ -193,6 +197,10 @@ html {
 .navbar-bottom .phone-icon {
   margin-right: 5px;
 }
+.linkdin{
+  right: -15px;
+  border-radius: 6px;
+}
 .linkdin-profile {
   border: 1px solid #60a5fa;
 }
@@ -291,6 +299,11 @@ html {
 }
 .service-second-sec {
   padding: 6rem 0.9rem;
+}
+@media screen and (min-width: 1281px) {
+  .container {
+    padding: 0px 20px 0px 0px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .container {
